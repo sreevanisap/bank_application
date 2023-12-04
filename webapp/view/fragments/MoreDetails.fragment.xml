@@ -1,0 +1,39 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core= "sap.ui.core">
+
+<Dialog id="moreBankDetails" title="Confidential Details">
+<VBox id="vBox1" binding="{oBankdetails>/accountDetails}" class= "sapUiSmallMargin">
+            
+            <HBox id="hBox1">
+                <Label text= "{i18n>accNum}" id= "bankAccountNum" class="sapUiSmallMarginEnd"/>
+                <Text text= "{oBankdetails>AccountNum}" id="bankAccountVal"/>
+            </HBox>
+
+            <HBox id="hBox2">
+                <Label text= "{i18n>accHolName}" id= "lblAcHolderNameId" class="sapUiSmallMarginEnd"/>
+                <Text text= "{oBankdetails>Name}" id="idAcHolderNameValue"/>
+            </HBox>
+
+            <HBox id="hBox3">
+                <Label text= "{i18n>ifsCode}" id= "lblIFSCId" class="sapUiSmallMarginEnd"/>
+                <Text text= "{oBankdetails>Ifsc}" id="idIFSCValue"/>
+            </HBox> 
+
+            <HBox id="hBox4">
+                <Label text= "{i18n>custId}" id= "lblCustId" class="sapUiSmallMarginEnd"/>
+                <Text text= "{oBankdetails>custId}" id="idCustValue"/>
+            </HBox> 
+
+            <HBox id="hBox5">
+                <Label text= "{i18n>addre}" id= "lblAddressId" class="sapUiSmallMarginEnd"/>
+                <Text text= "{oBankdetails>Address/city},{oBankdetails>Address/state},{oBankdetails>Address/country},{oBankdetails>Address/postalcode}" id="idAddressValue"/>
+            </HBox>      
+        </VBox>
+        <beginButton>
+        <Button id="closeBtn" text="Close" press=".onCloseBankDetails"/>
+        </beginButton>
+
+</Dialog>
+
+
+
+</core:FragmentDefinition>

@@ -1,0 +1,41 @@
+{
+    "accountDetails": {
+        "AccountNum": "45920842093",
+        "Name": "Sreevani Kamalla ",
+        "Ifsc": "88887502",
+        "custId": "850320",
+        "Address": {
+            "city": "Suryapet",
+            "state": "Telangana",
+            "postalcode": "508213",
+            "country": "India"
+        }
+    },
+    "cardDetails": [
+        {
+            "cardcompany": "Master Card",
+            "cardtype": "Debit Card",
+            "cardnumber": "8204637291047",
+            "assigneddate": "assigned on 4 Aug 2017",
+            "state": true
+        },
+        {
+            "cardcompany": "Master Card",
+            "cardtype": "Credit Card",
+            "cardnumber": "35890540247839",
+            "assigneddate": "assigned on 28 Feb 2016",
+            "state": false
+        },
+        {
+            "cardcompany": "Master Card",
+            "cardtype": "Debit Card",
+            "cardnumber": "459023809527",
+            "assigneddate": "assigned on 4 Aug 2017",
+            "state": true
+        }
+    ],
+    "household": 40000,
+      "emi": 21500,
+      "savings": 38500,
+      "empsalary" : 100000
+}

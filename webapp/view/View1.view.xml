@@ -1,7 +1,20 @@
 <mvc:View controllerName="bankapplication.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    class="sapUiSizeCompact">
+    <App id="app">
+    <Page id="page" title="{i18n>appTitle}">
+     <headerContent>
+           <Button id="demoBtn" text="Spanish" press="onSpanish"/>
+       </headerContent>
+       <content>
+        <!-- Bank Details Fragment -->
+            <core:Fragment id="bankDetailsFragment" fragmentName="bankapplication.view.fragments.BankDetails" type="XML"/>
+
+		<!-- Card Details Fragment -->	
+         	<core:Fragment id="cardDetailsFragment" fragmentName="bankapplication.view.fragments.CardDetails" type="XML"/>
+    </content>
     </Page>
+    </App>
 </mvc:View>

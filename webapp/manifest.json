@@ -16,6 +16,12 @@
       "toolsId": "3b3553db-77c8-4eb9-a4b4-550f53fc3289"
     }
   },
+  "dataSources":{
+    "JsonModel":{
+      "uri": "model/bankdetails.json",
+      "type":"json"
+    }
+  },
   "sap.ui": {
     "technology": "UI5",
     "icons": {
@@ -55,9 +61,21 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "bankapplication.i18n.i18n"
+          "bundleName": "bankapplication.i18n.i18n",
+          "supportedLocales": ["es","en"],
+          "fallbackLocale": "en"
         }
       }
+    },
+    "i18n_es": {
+      "type": "sap.ui.model.resource.ResourceModel",
+      "settings": {
+        "bundleName": "bankapplication.i18n.i18n_es"
+      }
+    },
+    "oBankdetails": {
+      "type": "sap.ui.model.json.JSONModel",
+      "dataSource": "JsonModel"
     },
     "resources": {
       "css": [
